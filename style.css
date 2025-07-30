@@ -1,0 +1,25 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+
+    
+}
+.header{
+    display: flex;
+}
+
+.header-logo img{
+    width: 150px;
+    height: auto;
+
+}
+
+.header-nav-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    align-content: center;
+    gap: 20px;
+
+}
