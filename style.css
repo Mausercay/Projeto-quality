@@ -1,25 +1,101 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: poppins, sans-serif;
     background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0;
 
-    
+/* Inicio do Header */  
 }
 .header{
-    display: flex;
+   display: flex;
+    justify-content: space-between; /* joga o logo pra esquerda e nav pra direita */
+    align-items: center; /* alinha verticalmente no centro */
+    width: 100%;
+    height: 80px; /* altura do cabeçalho */
+    padding: 0 20px; /* espaço lateral opcional */
+    border-bottom: 1px solid #e0e0e0;
+    /* border: 5px solid #000000; */
+
 }
 
 .header-logo img{
     width: 150px;
     height: auto;
+    margin-bottom: 4px;
+    margin-left: 25px;
+   /*  border: 4px solid red; */
 
 }
 
 .header-nav-list{
     list-style: none;
+    height: 100%;
+    width: 80%;
+    /* border: 4px solid red; */
+    
+    
+
+
+
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    align-content: center;
-    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
 
 }
+.header-nav-list li a{
+    text-transform: capitalize;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+   /*  border: 4px solid red; */
+    
+
+    
+}
+.header-nav-list li a:hover{
+    color: #ff0037;
+}
+
+.header-nav--active{
+    pointer-events: none;
+    color: #ffffff;
+    border-bottom: 3px solid #ff0037;
+    
+}
+
+.header-nav{
+    height: 100%;
+}
+
+/* Final do Header */
+
+/* inicio da main */
+
+.main-content{
+    width: 100%;
+    height: 100%;
+    font-size: 28px;
+    color: #e0e0e0;
+    background-image: url(Img-pg-quem2.jpg);
+    background-size: cover;
+    background-position: center;
+    
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.main-content-title{
+    font-size: 48px;
+    text-align: center;
+    padding: 0;
+   margin: 0;
+}
+
